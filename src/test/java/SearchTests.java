@@ -9,6 +9,6 @@ public class SearchTests {
     void successfulSearchTest() {
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("html").shouldHave(text("Об этой странице"));
+        $("html").shouldHave(text("Об этой странице")); //комменты
     }
 }
